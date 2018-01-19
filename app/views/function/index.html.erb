@@ -1,0 +1,180 @@
+
+    <!--Navbar-->
+    <nav class="navbar navbar-toggleable-md navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <strong>LaPlataEnBici</strong>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">De qué se trata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login">Caracteristícas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	 <!-- Modal del login -->
+	 <%=  render "users/sessions/new_modal" %>
+		           
+    <!--Mask-->
+    <div class="view hm-black-strong">
+        <div class="full-bg-img flex-center">
+            <ul>
+                <li>
+                    <h1 class="h1-responsive wow fadeInDown" data-wow-delay="0.2s">La Plata en bici</h1></li>
+                <li>
+                    <p class="wow fadeInDown">Servicio de alquiler de bicicletas</p>
+                </li>
+                <li>
+									<button type="button" class="btn btn-primary btn-lg wow fadeInLeft" data-toggle="modal" data-target="#modal">Ingresá!</button>
+                  <!--  <a target="_self" href="login.html" class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.2s">Ingresá!</a> -->
+                  <%= link_to "Registrate", new_user_registration_path , class: 'btn btn-default btn-lg wow fadeInRight'%>
+                   
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/.Mask-->
+
+    <!-- Main container-->
+    <div class="container">
+			<div id="about">
+
+			</div>
+        <div class="divider-new" >
+            <h2 class="h2-responsive wow bounceIn">¿De qué se trata?</h2>
+        </div>
+
+        <!--Section: de que se trata-> -->
+        <section  class="text-center wow bounceIn" data-wow-delay="0.2s">
+
+            <p>El ciclismo urbano es toda una tendencia en la actualidad, pues no solo ofrece múltiples
+ventajas para la salud, sino también, es un noble medio de transporte que permite ahorrar
+dinero y cuidar el medio ambiente</p>
+            <p>Todos los estudios nacionales e internacionales nos dicen que la bicicleta es el medio
+de transporte que facilita una mayor satisfacción en el desplazamiento habitual. El usuario de
+automóvil vive con frecuencia momentos de estrés, causados por carreteras atascadas, y en
+ocasiones de ira, relacionados con pequeñas disputas por el espacio con otros conductores. La
+movilidad activa (bicicleta y andar) ofrece un mayor bienestar subjetivo. Para recorrer distancias
+inferiores a siete u ocho kilómetros la bicicleta debe privilegiarse como alternativa de transporte
+individual por parte de los municipios.</p>
+<p>Brindamos un servicio de alquiler de bicicletas en la ciudad de La Plata. Ofrecemos diferentes
+estaciones por toda la ciudad donde se podrás retirar y/o devolver las bicicletas. Es facíl ,rapido y beneficia a tu salud!</p>
+
+        </section>
+        <!--Section: De que se trata-->
+
+        <div class="divider-new">
+            <h2 class="h2-responsive wow fadeInDown">Características</h2>
+        </div>
+
+        <!--Section: Best features-->
+        <section id="login">
+
+            <div class="row">
+
+                <!--First columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeInUp">
+
+                    	<!--Card content-->
+                        <div class="card-block text-center ">
+                            <!--Title-->
+                            <h4 class="card-title ">Más de 20 estaciones</h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">Disponemos más de 20 estaciones distribuidas estratégicamente por toda la ciudad.</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--First columnn-->
+
+                <!--Second columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeInUp" data-wow-delay="0.2s">
+
+                        <!--Card content-->
+                        <div class="card-block text-center">
+                            <!--Title-->
+                            <h4 class="card-title">Totalmente gratuido</h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">No tenés que pagar nada! Porque pensamos en tu bolsillo no te cobramos. Solo tenes que presentar tu DNI</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Second columnn-->
+
+                <!--Third columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeInUp" data-wow-delay="0.4s">
+
+                   
+                        <!--Card content-->
+                        <div class="card-block text-center">
+                            <!--Title-->
+                            <h4 class="card-title">24 hs disponible </h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">Podés usar la bicicleta durante todo el dia y devolverla en cualquier horario antes de las 0 hs del día que la retiraste</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Third columnn-->
+
+                <!--First columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeInUp" data-wow-delay="0.6s">
+
+                      <!--Card content-->
+                        <div class="card-block text-center">
+                            <!--Title-->
+                            <h4 class="card-title">Fácil</h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">Sólo tenes que registrarte y tendrás a dispocición las más de 200 bicicletas distibuidas en toda la ciudad.</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--First columnn-->
+            </div>
+
+        </section>
+        <!--/Section: Best features-->
+
+	
+
+    </div>
+    <!--/ Main container-->
+       
+    <!-- Animations init-->
+    <script>
+        new WOW().init();
+    </script>
+

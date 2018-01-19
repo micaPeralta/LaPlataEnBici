@@ -13,4 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require moment.min
+//= require tether.min
+//= require bootstrap.min
+//= require bootstrap-datepicker.min
+//= require mdb.min
+//= require modal
+//= require mydatatable
+//= require mymap
+//= require transition
+//= require functions

@@ -1,0 +1,61 @@
+<%= image_tag('city-cover', class: 'img-fluid z-depth-2')%>
+    <div class="container padding-top-2em" >
+        <p id="notice"><%= notice %></p>
+
+         <h3 class="h2-responsive wow bounceIn">Estaciones</h3>
+           <hr>
+            <%= link_to 'New Station', new_station_path %>
+
+           <table class="table table-hover" id="table">
+             <thead class="card-header">
+               <tr>
+                 <th>Nombre</th>
+                 <th>Ubicación</th>
+                 <th>Cant de bicicletas</th>
+                 <th>Estado</th>
+                 <th>Est. libres</th>
+                 <th colspan = "3">Opciones</th>
+               </tr>
+             </thead>
+             <tbody>
+             <tr>
+                 <td>Plaza San Martin</td>
+                 <td> 7 y 50</td>
+                 <td>23</td>
+                 <td>Cerrada</td>
+                 <td>6</td>
+                 <td>
+                   <button type="button" name="button" onclick=confirm()  class="btn primary-color-dark">Retirar</button>
+                 </td>
+               </tr>
+              <% @stations.each do |station| %>
+              <tr>
+                <td><%= station.name %></td>
+                td><%= station.capacity %></td>
+                <td><%= station.capacity %></td>
+                <td><%= station.latitude %></td>
+                <td><%= station.longitude %></td>
+                <td><%= station.estate %></td>
+                <td><%= link_to 'Show', station %></td>
+                <td><%= link_to 'Edit', edit_station_path(station) %></td>
+                <td><%= link_to 'Destroy', station, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                   <button type="button" name="button" onclick=confirm()  class="btn primary-color-dark">Retirar</button>
+                <td></td>
+              </tr>
+              <% end %>
+             </tbody>
+
+
+           </table>
+
+      </div>
+  
+        
+      <!-- DataTable-->
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.js"></script>
+      <!--Script config DataTable -->
+      <script type="text/javascript" charset="utf-8" src="js/mydatatable.js"> </script>
+
+
+
+

@@ -1,0 +1,43 @@
+/* YOUR CUSTOM STYLES */
+ body > .container{
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  min-height: 55%
+ }
+
+.container{  
+ margin-left: 5%;
+  margin-right: 5%;
+ }
+	
+.navbar {
+    background-color: #05191F;
+}
+.fondo-celeste{
+   background-color: #D2D7D9;
+  /**background: url("/img/portada.jpg")no-repeat center center fixed;*/
+}
+
+.fondo-blanco{
+  background-color: white;
+}
+
+.size-50{
+  height:80%;
+  width: 50%;
+}
+
+.text-white{
+  color: white;
+}
+
+.padding-top-2em{
+  padding-top: 2em;
+}
+
+
+#cover{
+
+  /*margin-bottom: -30px;*/
+}

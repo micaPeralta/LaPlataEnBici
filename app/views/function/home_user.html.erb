@@ -1,0 +1,92 @@
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header primary-color-dark text-white">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title w-100" id="myModalLabel">Estaciones con lugares disponibles</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <form class="" action="" method="post">
+
+                    <div class="md-form">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <select class="form-control" name="">
+                            <option value="">Plaza San Martin</option>
+                            <option value="">Parque Saavedra</option>
+                            <option value="">Plaza Moreno</option>
+                        </select>
+                        </div>
+                      </div>
+                      <input type="checkbox" value="" class="form-contro"></input>Denunciar
+                      <textarea name="name" rows="8" cols="80" class="form-control" placeholder="Ingrese una descripcion"></textarea>
+                    </form>
+
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-color-dark">Aceptar</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- /.Live preview-->
+
+    <!-- Main container-->
+
+    <div class="container fondo-blanco padding-top-2em " >
+
+      <!--Panel-->
+      <div class="card text-center">
+          <div class="card-header text-muted  default-color-dark white-text">
+              <h4>Ubicacion estaciones</h4>
+          </div>
+          <div class="card-block">
+            <div id="map-container" class="z-depth-1 wow fadeInUp" style="height:400px;"></div>
+
+          </div>
+      </div>
+      <!--/.Panel-->
+		<br><br>
+
+		<h3> Bicicletas retiradas</h3>
+		<hr>
+
+         <table class="table table-hover" id="table">
+             <thead class="card-header ">
+               <tr>
+                 <th>Identificador</th>
+                 <th>Estación</th>
+                 <th>Hora</th>
+                 <th>Opción</th>
+
+               </tr>
+             </thead>
+             <tbody>
+             	<tr>
+             		<td>13435</td>
+             		<td>Plaza Moreno</td>
+             		<td> 12:10</td>
+             		<td> <button type="button" name="button" class="btn primary-color-dark pull-right" data-toggle="modal" data-target="#myModal">Devolver</button></td>
+             	</tr>
+             	<tr>
+             		<td>2738273</td>
+             		<td>Parque Saavedra</td>
+             		<td>20:05</td>
+             		<td> <button type="button" name="button" class="btn primary-color-dark pull-right" data-toggle="modal" data-target="#myModal">Devolver</button></td>
+             	</tr>
+             </tbody>
+          </table>
+        </div>
+
+
+  

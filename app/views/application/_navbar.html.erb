@@ -1,0 +1,38 @@
+   <!--Navbar-->
+    <nav class="navbar navbar-toggleable-md navbar-dark scrolling-navbar" >
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <strong>LaPlataEnBici</strong>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+						<a href="/" class="nav-link"> Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stations">Estaciones</a>
+                    </li>
+                    <% if user_signed_in? and current_user.admin %>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Bicicletas">Bicicletas<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Usuarios">Usuarios</a>
+                    </li>
+                    <% end %>
+                </ul>
+
+            </div>
+        </div>
+        <% if user_signed_in? %>
+              <li>
+              <%= link_to('Logout', destroy_user_session_path, method: :delete,class: 'nav-link pull-right' ) %>        
+              </li>
+        <% end %>
+       
+    </nav>
+    <!--/.Navbar-->

@@ -1,0 +1,29 @@
+simple value for push.default: the current branch is pushed to the corresponding upstream branch, but as a safety measure, the push
+       is aborted if the upstream branch does not have the same name as the local one.
+       -u, --set-upstream
+           For every branch that is up to date or successfully pushed, add upstream (tracking) reference, used by argument-less git-pull(1)
+           Without additional configuration, pushes the current branch to the configured upstream (remote.origin.merge configuration
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
